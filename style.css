@@ -163,6 +163,16 @@ body {
   
 }
 @media (max-width: 490px) {
+    body {
+    background-image: url("ovm2zpna.png");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    
+
+    
+}
     .chatbot {
         width: 100%;
         right: 0;
