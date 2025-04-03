@@ -118,17 +118,17 @@
         <button type="submit">Sign In</button>
     </form>
 
-    <script>
+   <script>
         function validateLogin() {
             var username = document.getElementById("username").value;
             var password = document.getElementById("password").value;
 
-            // Dummy credentials for testing
-            if (username === "admin" && password === "1234") {
+            // Allow any username and password
+            if (username && password) {
                 window.location.href = "main.html"; // Redirect to your main page
                 return false; // Prevent form from actually submitting
             } else {
-                alert("Invalid username or password! Try again.");
+                alert("Please enter both username and password.");
                 return false; // Stop form submission
             }
         }
