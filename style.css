@@ -59,25 +59,28 @@ body h4 {
 .show-chatbot .chatbot-toggler span:last-child{
     opacity: 1;
 }
+/* Chatbot container */
 .chatbot {
     position: fixed;
-    right: 0; /* Align to the rightmost edge */
-    bottom: 0; /* Align to the bottom edge */
-    top: 0; /* Stretch to the top edge */
-    width: 400px; /* Set a fixed width for the chatbot */
-    height: 100%; /* Cover the full height of the page */
-    transform: translateX(100%); /* Initially hide the chatbot off-screen */
-    opacity: 0; /* Initially make it invisible */
-    pointer-events: none; /* Disable interactions when hidden */
+    right: 20px; /* Add spacing from the right edge */
+    bottom: 20px; /* Add spacing from the bottom edge */
+    top: 20px; /* Add spacing from the top edge */
+    width: 360px; /* Adjust width to fit within the spacing */
+    height: calc(100% - 40px); /* Adjust height to account for top and bottom spacing */
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
     overflow: hidden;
-    background: #fff; /* Background color for the chatbot */
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for opening/closing */
+    background: #fff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px; /* Add rounded corners */
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
+
 .show-chatbot .chatbot {
-    transform: translateX(0); /* Slide the chatbot into view */
-    opacity: 1; /* Make it visible */
-    pointer-events: auto; /* Enable interactions */
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
 }
 .chatbot header {
     background: #d40012c2; /* Header background color */
