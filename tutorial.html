@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woodworking Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Body Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #ebd215, #f0dc05,#abe50b);
+            color: #333;
+        }
+
+        /* Tutorials Container */
+        .tutorials-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tutorials-container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Page Title */
+        .tutorials-container h1 {
+            font-size: 36px;
+            color: #007bff;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Page Description */
+        .tutorials-container p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        /* Tutorial Category Section */
+        .tutorial-category {
+            margin-bottom: 40px;
+        }
+
+        .tutorial-category h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: left;
+            border-left: 5px solid #007bff;
+            padding-left: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Tutorial Card */
+        .tutorial-card {
+            display: inline-block;
+            width: 300px;
+            margin: 10px;
+            background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tutorial-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Tutorial Card Image */
+        .tutorial-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 2px solid #007bff;
+        }
+
+        /* Tutorial Card Title */
+        .tutorial-card h3 {
+            font-size: 20px;
+            color: #007bff;
+            margin: 15px 10px 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Tutorial Card Description */
+        .tutorial-card p {
+            font-size: 14px;
+            color: #555;
+            margin: 0 10px 15px;
+            line-height: 1.5;
+        }
+
+        /* Tutorial Card Button */
+        .tutorial-card .btn {
+            display: inline-block;
+            margin: 10px 0 15px;
+            padding: 10px 20px;
+            background: linear-gradient(to right, #007bff, #0056b3);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .tutorial-card .btn:hover {
+            background: linear-gradient(to right, #0056b3, #003d80);
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .tutorial-card {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .tutorial-category h2 {
+                font-size: 24px;
+            }
+
+            .tutorial-card h3 {
+                font-size: 18px;
+            }
+
+            .tutorial-card p {
+                font-size: 13px;
+            }
+
+            .tutorial-card .btn {
+                font-size: 12px;
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="tutorials-container">
+        <h1>Woodworking Tutorials</h1>
+        <p>Explore step-by-step tutorials categorized by skill level.</p>
+
+        <!-- Beginner Tutorials -->
+        <section class="tutorial-category">
+            <h2>Beginner Tutorials</h2>
+            <div class="tutorial-card">
+                <img src="wtable.jpg" alt="How to Build a Wooden Table">
+                <h3>How to Build a Wooden Table</h3>
+                <p>Learn how to build a simple wooden table with basic tools and materials.</p>
+                <a href="wooden-table.html" class="btn">View Tutorial</a>
+            </div>
+            <div class="tutorial-card">
+                <img src="images.jpg" alt="Beginner's Guide to Wood Carving">
+                <h3>Beginner's Guide to Wood Carving</h3>
+                <p>Start your wood carving journey with this beginner-friendly guide.</p>
+                <a href="wood-carving.html" class="btn">View Tutorial</a>
+            </div>
+        </section>
+
+        <!-- Intermediate Tutorials -->
+        <section class="tutorial-category">
+            <h2>Intermediate Tutorials</h2>
+            <div class="tutorial-card">
+                <img src="81tWg5tOykL._SL1500_.jpg" alt="How to Build a Bookshelf">
+                <h3>How to Build a Bookshelf</h3>
+                <p>Take your skills to the next level by building a custom bookshelf.</p>
+                <a href="bookshelf.html" class="btn">View Tutorial</a>
+            </div>
+            <div class="tutorial-card">
+                <img src="chair.jpg" alt="How to Build a Wooden Chair">
+                <h3>How to Build a Wooden Chair</h3>
+                <p>Learn how to craft a sturdy and stylish wooden chair.</p>
+                <a href="wooden-chair.html" class="btn">View Tutorial</a>
+            </div>
+        </section>
+
+        <!-- Advanced Tutorials -->
+        <section class="tutorial-category">
+            <h2>Advanced Tutorials</h2>
+            <div class="tutorial-card">
+                <img src="dine.jpg" alt="How to Build a Dining Table">
+                <h3>How to Build a Dining Table</h3>
+                <p>Master your woodworking skills by building a custom dining table.</p>
+                <a href="dining-table.html" class="btn">View Tutorial</a>
+            </div>
+            <div class="tutorial-card">
+                <img src="cabinet.jpg" alt="How to Build a Cabinet">
+                <h3>How to Build a Cabinet</h3>
+                <p>Learn advanced joinery techniques to build a professional-grade cabinet.</p>
+                <a href="cabinet.html" class="btn">View Tutorial</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
