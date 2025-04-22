@@ -162,28 +162,24 @@
         <p>Estimate the amount of wood and cost for your project.</p>
         <form id="wood-calculator">
             <div class="form-group">
-                <label for="length">Length (meter square):</label>
+                <label for="length">Length (inches):</label>
                 <input type="number" id="length" placeholder="Enter length" required>
             </div>
             <div class="form-group">
-                <label for="width">Width (meter square):</label>
+                <label for="width">Width (inches):</label>
                 <input type="number" id="width" placeholder="Enter width" required>
             </div>
             <div class="form-group">
-                <label for="thickness">Thickness (meter square):</label>
+                <label for="thickness">Thickness (inches):</label>
                 <input type="number" id="thickness" placeholder="Enter thickness" required>
             </div>
             <div class="form-group">
                 <label for="wood-type">Wood Type:</label>
                 <select id="wood-type" required>
                     <option value="" disabled selected>Select wood type</option>
-                    <option value="oak" data-cost="3000">Oak (RS.3000 per meter square)</option>
-                    <option value="pine" data-cost="800">Pine (RS.800  per meter square)</option>
-                    <option value="cedar" data-cost="2000">Cedar (RS.2000 per meter square)</option>
-                    <option value="teak" data-cost="3810">teak(Rs.3810 per meter square)</option>
-                    <option value="sal" data-cost="1000">sal(Rs.1000 per meter square)</option>
-                    <option value="sheesham" data-cost="1500">sal(Rs.1500 per meter square)</option>
-                    <option value="walnut" data-cost="2100">sal(Rs.2100 per meter square)</option>
+                    <option value="oak" data-cost="5">Oak ($5 per cubic inch)</option>
+                    <option value="pine" data-cost="3">Pine ($3 per cubic inch)</option>
+                    <option value="cedar" data-cost="4">Cedar ($4 per cubic inch)</option>
                 </select>
             </div>
             <button type="submit">Calculate</button>
@@ -213,8 +209,8 @@
             const volume = length * width * thickness;
             const cost = volume * costPerCubicInch;
 
-            document.getElementById("volume").textContent = `Total Volume: ${volume.toFixed(2)} meter square`;
-            document.getElementById("cost").textContent = `Total Cost: $RS.{cost.toFixed(2)}`;
+            document.getElementById("volume").textContent = `Total Volume: ${volume.toFixed(2)} cubic inches`;
+            document.getElementById("cost").textContent = `Total Cost: $${cost.toFixed(2)}`;
 
             document.getElementById("result").style.display = "block";
         });
